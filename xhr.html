@@ -13,7 +13,11 @@
 			var xhr; 
 			xhr = new XMLHttpRequest();
 			xhr.open('GET',weatherAPI,false);
-			// xhr.open only works with the third argument set as false, if I set it as true or leave it blank the readystate==1 and the status==0 and it doesn't insert the json request into the dom, but I get an error warning in the console that states "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience"
+			 /* xhr.open only works with the third argument set as false, if I set it as true or 
+			 leave it blank the readystate==1 and the status==0 and it doesn't insert the json 
+			 request into the dom, but I get an error warning in the console that states 
+			 "Synchronous XMLHttpRequest on the main thread is deprecated because of its 
+			 detrimental effects to the end user's experience" */
 			xhr.send();
 			xhr.onreadystatchange=function(){
 				if(xhr.readyState==4 && xhr.status==200){
