@@ -1,1 +1,1 @@
-Vanilla javascript version of jQuery .ajax method. Uses OpenWeather API to show user's location and current temperature in degrees farenheit. 
+Vanilla javascript version of jQuery .ajax method. Uses OpenWeather API to show user's location and current temperature in degrees farenheit. In the first few commits the XMLHTTPRequest object is used and beginning with the "fetch API" commit the Fetch API is being used. 
